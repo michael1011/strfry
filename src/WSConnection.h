@@ -7,8 +7,10 @@
 
 
 class WSConnection {
+public:
     std::string url;
 
+private:
     uWS::Hub hub;
     uWS::Group<uWS::CLIENT> *hubGroup;
     std::unique_ptr<uS::Async> hubTrigger;
